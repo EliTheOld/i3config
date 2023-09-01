@@ -192,5 +192,5 @@ client.urgent		    	$red	    $red	    $white		$yellow 	$yellow
 # 		urgent_workspace	$red	    $red	    $white		$purple
 # 	}
 # }
-bindsym $mod+a exec ~/.config/rofi/launchers/type-7/launcher.sh
-bindsym $mod+x exec ~/.config/rofi/powermenu/type-6/powermenu.sh
+bindsym $mod+a exec ~/.config/rofi/launchers/type-3/launcher.sh
+bindsym $mod+x exec ~/.config/rofi/powermenu/type-4/powermenu.sh
