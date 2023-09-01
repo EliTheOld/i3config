@@ -69,7 +69,7 @@ bindcode $mod+Shift+81 	 move container to workspace  $ws9
 bindcode $mod+Shift+90 	 move container to workspace  $ws10
 bindsym $mod+Return exec kitty
 bindsym $mod+t exec kitty
-bindsym $mod+d exec dmenu_run -nb '#282828' -nf '#ebdbb2' -sb '#d79921' -sf '#282828' -fn 'JetBrainsMono-15'
+bindsym $mod+d exec dmenu_run -nb '#1D202F' -nf '#c0caf5' -sb '#73daca' -sf '#1D202F' -fn 'CascadiaCode-15'
 bindsym $mod+q kill
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
