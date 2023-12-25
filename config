@@ -112,7 +112,7 @@ set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
 set $ws4 "4: "
-set $ws5 "5:🦀 "
+set $ws5 "5: "
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -167,7 +167,7 @@ client.unfocused	    	$darkgrey	$darkgrey  	$white		$darkgrey  	$darkgrey
 client.focused_inactive		$mediumgrey	$mediumgrey	$white		$black		$darkgrey
 client.urgent		    	$red	    $red	    $white		$yellow 	$yellow
 bar {
-        status_command i3status -c ~/.config/i3status/i3status.conf
+        # status_command i3status -c ~/.config/i3status/i3status.conf
 		font pango:Ubuntu Mono Nerd Font 12
 	    	position top
 		    tray_padding 0
