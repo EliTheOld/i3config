@@ -168,6 +168,8 @@ client.unfocused	    	$darkgrey	$darkgrey  	$white		$darkgrey  	$darkgrey
 client.focused_inactive		$mediumgrey	$mediumgrey	$white		$black		$darkgrey
 client.urgent		    	$red	    $red	    $white		$yellow 	$yellow
 bar {
+      # status_command i3blocks
+      status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
         # status_command i3status -c ~/.config/i3status/i3status.conf
 		font pango:Ubuntu Mono Nerd Font 12
 	    	position top
