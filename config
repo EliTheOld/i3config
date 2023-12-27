@@ -71,8 +71,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+t exec alacritty
 bindsym $mod+r exec dmenu_run -nb '#282828' -nf '#ebdbb2' -sb '#d65d0e' -sf '#282828' -fn 'UbuntuMono-11'
 bindsym $mod+q kill
-bindsym $mod+Shift+r resize
-bindsym $mod+Shift+c restart
+# bindsym $mod+Shift+r resize
+bindsym $mod+Shift+r restart
 bindsym XF86MonBrightnessUp exec brightnessctl s +5% && notify-send "$(brightnessctl | grep Current)"
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%- && notify-send "$(brightnessctl | grep Current)"
 bindsym $mod+h focus left
@@ -168,10 +168,16 @@ client.unfocused	    	$darkgrey	$darkgrey  	$white		$darkgrey  	$darkgrey
 client.focused_inactive		$mediumgrey	$mediumgrey	$white		$black		$darkgrey
 client.urgent		    	$red	    $red	    $white		$yellow 	$yellow
 bar {
-      # status_command i3blocks
-      status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
-        # status_command i3status -c ~/.config/i3status/i3status.conf
-		font pango:Ubuntu Mono Nerd Font 12
+    # status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
+    # status_command i3status -c ~/.config/i3status/i3status.conf
+
+    status_command /usr/bin/bumblebee-status \
+        -m arch_update layout-xkbswitch brightness pamixer memory battery-upower time date docker_ps system \
+        -p  time.format=" %H:%M" date.format=" %a, %d %b %Y" memory.format="{used}" \
+        -t gruvbox-powerline
+
+
+		font pango:Inconsolata Nerd Font 12
 	    	position top
 		    tray_padding 0
 strip_workspace_numbers yes
